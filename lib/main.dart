@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:reusable_widgets/widgets/buttons/cupertino_switch_button.dart';
+import 'package:reusable_widgets/widgets/buttons/custom_outline_textbutton.dart';
 
 import 'widgets/buttons/custom_gradient_elevatedbutton.dart';
 import 'widgets/buttons/custom_toggle_button.dart';
@@ -77,6 +78,12 @@ class _MyReusableWidgetViewState extends State<MyReusableWidgetView> {
                   child: Padding(
                       padding: const EdgeInsets.only(top: 18.0),
                       child: buildBorderedCustomDropdown())),
+              SliverToBoxAdapter(
+
+                  ///[CustomOutlineTextButton Area!]
+                  child: Padding(
+                      padding: const EdgeInsets.only(top: 18.0),
+                      child: buildCustomOutlineTextButton())),
             ],
           ),
         ),
@@ -84,47 +91,54 @@ class _MyReusableWidgetViewState extends State<MyReusableWidgetView> {
     );
   }
 
+  CustomOutlineTextButton buildCustomOutlineTextButton() {
+    return CustomOutlineTextButton(
+      buttonText: 'OUTLINE TEXTBUTTON',
+      onPressed: () {},
+    );
+  }
+
   CustomDropdownButtonFormField buildDefaultCustomDropdown() {
     return CustomDropdownButtonFormField(
-                      padding: const EdgeInsets.symmetric(horizontal: 10.0),
-                      labelText: 'LABEL',
-                      labelTextStyle: const TextStyle(
-                        fontSize: 12,
-                        fontWeight: FontWeight.bold,
-                      ),
-                      value: selectedCountry,
-                      items: listOfCountry.map((String val) {
-                        return DropdownMenuItem(
-                          alignment: Alignment.centerLeft,
-                          value: val,
-                          child: Text(
-                            val,
-                          ),
-                        );
-                      }).toList(),
-                    );
+      padding: const EdgeInsets.symmetric(horizontal: 10.0),
+      labelText: 'LABEL',
+      labelTextStyle: const TextStyle(
+        fontSize: 12,
+        fontWeight: FontWeight.bold,
+      ),
+      value: selectedCountry,
+      items: listOfCountry.map((String val) {
+        return DropdownMenuItem(
+          alignment: Alignment.centerLeft,
+          value: val,
+          child: Text(
+            val,
+          ),
+        );
+      }).toList(),
+    );
   }
 
   CustomDropdownButtonFormField buildBorderedCustomDropdown() {
     return CustomDropdownButtonFormField(
-                      isBordered: true, //!!!!
-                      padding: const EdgeInsets.symmetric(horizontal: 10.0),
-                      labelText: 'LABEL',
-                      labelTextStyle: const TextStyle(
-                        fontSize: 12,
-                        fontWeight: FontWeight.bold,
-                      ),
-                      value: selectedCountry,
-                      items: listOfCountry.map((String val) {
-                        return DropdownMenuItem(
-                          alignment: Alignment.centerLeft,
-                          value: val,
-                          child: Text(
-                            val,
-                          ),
-                        );
-                      }).toList(),
-                    );
+      isBordered: true, //!!!!
+      padding: const EdgeInsets.symmetric(horizontal: 10.0),
+      labelText: 'LABEL',
+      labelTextStyle: const TextStyle(
+        fontSize: 12,
+        fontWeight: FontWeight.bold,
+      ),
+      value: selectedCountry,
+      items: listOfCountry.map((String val) {
+        return DropdownMenuItem(
+          alignment: Alignment.centerLeft,
+          value: val,
+          child: Text(
+            val,
+          ),
+        );
+      }).toList(),
+    );
   }
 
   CustomGradientElevatedButton buildCustomGradientElevatedButton() {
