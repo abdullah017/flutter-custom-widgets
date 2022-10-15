@@ -16,3 +16,7 @@ In this repo, there are widgets that are used frequently and customized accordin
 ## [CUSTOM TOGGLE BUTTON]
 
 ![custom_toggle_button](https://user-images.githubusercontent.com/29359748/195978886-c853f9a3-4d8b-451b-b036-0de298fe6a46.png)
+
+## [CUSTOM DROPDOWN BUTTON]
+
+![custom_dropdown_button](https://user-images.githubusercontent.com/29359748/195983964-e3b6617e-4c92-46fb-b1ff-eb069b238c23.png)
