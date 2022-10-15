@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:reusable_widgets/widgets/buttons/cupertino_switch_button.dart';
 
 import 'widgets/buttons/custom_gradient_elevatedbutton.dart';
+import 'widgets/buttons/custom_toggle_button.dart';
 
 void main() {
   runApp(const MyApp());
@@ -30,6 +31,7 @@ class MyReusableWidgetView extends StatefulWidget {
 
 class _MyReusableWidgetViewState extends State<MyReusableWidgetView> {
   bool cupertinoSwitchValue = false; //CUPERTINOSWITCHBUTTON VALUE
+  List<bool> toggleButtonItemsSelected = [true, false];
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -49,7 +51,17 @@ class _MyReusableWidgetViewState extends State<MyReusableWidgetView> {
                   child: Padding(
                 padding: const EdgeInsets.only(top: 18.0),
                 child: buildCustomGradientElevatedButton(),
-              ))
+              )),
+              SliverToBoxAdapter(
+
+                  ///[CustomGradientElevatedButton Area!]
+                  child: Padding(
+                padding: const EdgeInsets.only(top: 18.0),
+                child: CustomToggleButton(
+                  isSelected: toggleButtonItemsSelected,
+                  onPressed: (value) => tabChange(value),
+                ),
+              )),
             ],
           ),
         ),
@@ -81,5 +93,23 @@ class _MyReusableWidgetViewState extends State<MyReusableWidgetView> {
         ),
       ],
     );
+  }
+
+  ///[TOGGLE BUTTON TAB CHANGE FUNCTION]
+  tabChange(int newIndex) {
+    for (int index = 0; index < toggleButtonItemsSelected.length; index++) {
+      if (index == newIndex) {
+        setState(() {
+          toggleButtonItemsSelected[index] = true;
+          //print(index); //button index no
+        });
+      } else {
+        setState(() {
+          toggleButtonItemsSelected[index] = false;
+          //print(index); //button index no
+        });
+      }
+      setState(() {});
+    }
   }
 }
