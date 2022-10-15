@@ -20,3 +20,7 @@ In this repo, there are widgets that are used frequently and customized accordin
 ## [CUSTOM DROPDOWN BUTTON]
 
 ![custom_dropdown_button](https://user-images.githubusercontent.com/29359748/195983964-e3b6617e-4c92-46fb-b1ff-eb069b238c23.png)
+
+## [CUSTOM OUTLINE TEXT BUTTON]
+
+![custom_outline_textbutton](https://user-images.githubusercontent.com/29359748/195984469-1f65f80b-b43e-4aef-91a3-30da5a619dc5.png)
