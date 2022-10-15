@@ -1,16 +1,18 @@
-# reusable_widgets
 
-A new Flutter project.
 
-## Getting Started
+# Flutter-Reusable-Widgets
+In this repo, there are widgets that are used frequently and customized according to where they are used. You can use these widgets and make improvements and additions.
 
-This project is a starting point for a Flutter application.
+### WIDGET SS
 
-A few resources to get you started if this is your first Flutter project:
+## [CUSTOM CUPERTINO SWITCH BUTTON]
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+![cupertino_switch](https://user-images.githubusercontent.com/29359748/195869392-7a23e92c-d641-4bd2-b5e4-eabe354c65f1.png)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## [CUSTOM GRADIENT ELEVATED BUTTON]
+
+![gradient_elevated_button](https://user-images.githubusercontent.com/29359748/195875941-96356266-bc13-4c0d-b8da-c54fdea6ec65.png)
+
+## [CUSTOM TOGGLE BUTTON]
+
+![custom_toggle_button](https://user-images.githubusercontent.com/29359748/195978886-c853f9a3-4d8b-451b-b036-0de298fe6a46.png)
