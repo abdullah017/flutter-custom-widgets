@@ -24,3 +24,7 @@ In this repo, there are widgets that are used frequently and customized accordin
 ## [CUSTOM OUTLINE TEXT BUTTON]
 
 ![custom_outline_textbutton](https://user-images.githubusercontent.com/29359748/195984469-1f65f80b-b43e-4aef-91a3-30da5a619dc5.png)
+
+## [CUSTOM COUNT PICKER BUTTON]
+
+<img width="342" alt="count_picker" src="https://user-images.githubusercontent.com/29359748/196165640-797604d6-0579-4158-a066-9adb6346181e.png">
