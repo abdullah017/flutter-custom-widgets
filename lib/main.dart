@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:reusable_widgets/widgets/buttons/cupertino_switch_button.dart';
 import 'package:reusable_widgets/widgets/buttons/custom_outline_textbutton.dart';
+import 'package:reusable_widgets/widgets/count_picker.dart';
 
 import 'widgets/buttons/custom_gradient_elevatedbutton.dart';
 import 'widgets/buttons/custom_toggle_button.dart';
@@ -84,6 +85,12 @@ class _MyReusableWidgetViewState extends State<MyReusableWidgetView> {
                   child: Padding(
                       padding: const EdgeInsets.only(top: 18.0),
                       child: buildCustomOutlineTextButton())),
+              SliverToBoxAdapter(
+
+                  ///[CustomOutlineTextButton Area!]
+                  child: Padding(
+                      padding: const EdgeInsets.only(top: 18.0),
+                      child: buildCountPicker())),
             ],
           ),
         ),
@@ -165,6 +172,10 @@ class _MyReusableWidgetViewState extends State<MyReusableWidgetView> {
         ),
       ],
     );
+  }
+
+  Widget buildCountPicker() {
+    return const CountPicker();
   }
 
   ///[TOGGLE BUTTON TAB CHANGE FUNCTION]
