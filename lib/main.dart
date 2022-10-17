@@ -87,7 +87,7 @@ class _MyReusableWidgetViewState extends State<MyReusableWidgetView> {
                       child: buildCustomOutlineTextButton())),
               SliverToBoxAdapter(
 
-                  ///[CustomOutlineTextButton Area!]
+                  ///[CountPicker Area!]
                   child: Padding(
                       padding: const EdgeInsets.only(top: 18.0),
                       child: buildCountPicker())),
