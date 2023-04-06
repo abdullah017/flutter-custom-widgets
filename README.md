@@ -28,3 +28,11 @@ In this repo, there are widgets that are used frequently and customized accordin
 ## [CUSTOM COUNT PICKER BUTTON]
 
 <img width="342" alt="count_picker" src="https://user-images.githubusercontent.com/29359748/196165640-797604d6-0579-4158-a066-9adb6346181e.png">
+
+[CUSTOM HERO WIDGET]
+
+
+https://user-images.githubusercontent.com/29359748/230351147-a0d84634-4535-4625-80f2-e45250aff305.mov
+
+
+
