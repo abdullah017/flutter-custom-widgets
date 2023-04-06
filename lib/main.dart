@@ -3,6 +3,7 @@ import 'package:reusable_widgets/widgets/buttons/cupertino_switch_button.dart';
 import 'package:reusable_widgets/widgets/buttons/custom_outline_textbutton.dart';
 import 'package:reusable_widgets/widgets/count_picker.dart';
 
+import 'widgets/animation/animation_hero_widget.dart';
 import 'widgets/buttons/custom_gradient_elevatedbutton.dart';
 import 'widgets/buttons/custom_toggle_button.dart';
 import 'widgets/buttons/dropdown_button.dart';
@@ -91,6 +92,12 @@ class _MyReusableWidgetViewState extends State<MyReusableWidgetView> {
                   child: Padding(
                       padding: const EdgeInsets.only(top: 18.0),
                       child: buildCountPicker())),
+              SliverToBoxAdapter(
+
+                  ///[CountPicker Area!]
+                  child: Padding(
+                      padding: const EdgeInsets.only(top: 18.0),
+                      child: buildHeroWidgetScreen())),
             ],
           ),
         ),
@@ -176,6 +183,18 @@ class _MyReusableWidgetViewState extends State<MyReusableWidgetView> {
 
   Widget buildCountPicker() {
     return const CountPicker();
+  }
+
+  CustomOutlineTextButton buildHeroWidgetScreen() {
+    return CustomOutlineTextButton(
+      buttonText: 'GO TO HERO WİDGET SCREEN',
+      onPressed: () {
+        Navigator.push(
+            context,
+            MaterialPageRoute(
+                builder: (context) => const AnimationHeroWidget()));
+      },
+    );
   }
 
   ///[TOGGLE BUTTON TAB CHANGE FUNCTION]

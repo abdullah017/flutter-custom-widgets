@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 class CustomDropdownButtonFormField extends StatelessWidget {
@@ -74,7 +75,9 @@ class CustomDropdownButtonFormField extends StatelessWidget {
         validator: validator,
         value: value,
         onChanged: (value) {
-          print(value);
+          if (kDebugMode) {
+            print(value);
+          }
         },
         onSaved: (value) {},
         items: items,
@@ -82,14 +85,3 @@ class CustomDropdownButtonFormField extends StatelessWidget {
     );
   }
 }
-
-
-// controller.listOfValue.map((String val) {
-//         return DropdownMenuItem(
-//           value: val,
-//           child: Text(
-//             val,
-//             style: AppTextStyle().getSfProDisplayMedium(Colors.black),
-//           ),
-//         );
-//       }).toList(),
