@@ -3,6 +3,7 @@ import 'package:reusable_widgets/widgets/buttons/cupertino_switch_button.dart';
 import 'package:reusable_widgets/widgets/buttons/custom_outline_textbutton.dart';
 import 'package:reusable_widgets/widgets/count_picker.dart';
 
+import 'widgets/animation/animation_container_widget.dart';
 import 'widgets/animation/animation_hero_widget.dart';
 import 'widgets/buttons/custom_gradient_elevatedbutton.dart';
 import 'widgets/buttons/custom_toggle_button.dart';
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyReusableWidgetView(),
+      home: const AnimatedContainerWidget(),
     );
   }
 }
