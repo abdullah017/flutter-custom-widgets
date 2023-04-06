@@ -33,13 +33,6 @@ In this repo, there are widgets that are used frequently and customized accordin
 
 https://user-images.githubusercontent.com/29359748/230351147-a0d84634-4535-4625-80f2-e45250aff305.mov
 
-## [CUSTOM COUNT PICKER BUTTON]
-
+## [CUSTOM ANIMATED CONTAINER]
 
 https://user-images.githubusercontent.com/29359748/230354603-fa82eff2-308f-4af6-88c5-c4d4bffe9d9f.mov
-
-
-
-
-
-
