@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const AnimatedContainerWidget(),
+      home: const MyReusableWidgetView(),
     );
   }
 }
@@ -99,6 +99,12 @@ class _MyReusableWidgetViewState extends State<MyReusableWidgetView> {
                   child: Padding(
                       padding: const EdgeInsets.only(top: 18.0),
                       child: buildHeroWidgetScreen())),
+              SliverToBoxAdapter(
+
+                  ///[CountPicker Area!]
+                  child: Padding(
+                      padding: const EdgeInsets.only(top: 18.0),
+                      child: buildAnimatedContainerScreen())),
             ],
           ),
         ),
@@ -194,6 +200,18 @@ class _MyReusableWidgetViewState extends State<MyReusableWidgetView> {
             context,
             MaterialPageRoute(
                 builder: (context) => const AnimationHeroWidget()));
+      },
+    );
+  }
+
+  CustomOutlineTextButton buildAnimatedContainerScreen() {
+    return CustomOutlineTextButton(
+      buttonText: 'GO TO ANIMATED WİDGET SCREEN',
+      onPressed: () {
+        Navigator.push(
+            context,
+            MaterialPageRoute(
+                builder: (context) => const AnimatedContainerWidget()));
       },
     );
   }
